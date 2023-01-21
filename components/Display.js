@@ -177,10 +177,8 @@ const Display = () => {
             </p>
           </b>
         </div>
-        <Image
-          src={cf}
-          width={400}
-          onContextMenu="return false;"
+        <img
+          src="/cf1.png"
           className="cf"
           alt="cool right?"
         />

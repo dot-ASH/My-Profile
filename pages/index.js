@@ -1,13 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
 import Display from "../components/Display";
 import About from "../components/About";
 import Script from "next/script";
 import bg from "../public/bg.jpg";
-import { RxDot } from "react-icons/rx";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,9 +20,8 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <Script></Script>
       </Head>
-      <Image src={bg} className="bg-image" alt="bg"></Image>
+      <img src="/bg.jpg" className="bg-image" alt="bg"></img>
       {/* Navbar */}
-      {/* <div className="sections"> */}
       <Navbar />
       {/* Home */}
       <Display />

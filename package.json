@@ -1,14 +1,12 @@
 {
-  "homepage": "https://dot-ASH.github.io/my-profile",
   "name": "my-profile",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
     "lint": "next lint"
   },
   "dependencies": {
