@@ -1,9 +1,12 @@
 import React from "react";
+import Image from "next/image";
+import bg from "../public/bg.jpg";
 
 const Navbar = () => {
   return (
     <section id="nav-div">
-      <img src="/bg.jpg" className="bg-image" alt="bg"></img>
+      <Image src={bg} className="bg-image" alt="bg"></Image>
+      {/* <Image src="/bg.jpg" className="bg-image" alt="bg"></Image> */}
       <div className="flex items-center justify-around pt-[1rem] sm:ml-[1rem]">
         {/* left */}
         <div className="flex items-center pl-5 py-6 shrink-0">

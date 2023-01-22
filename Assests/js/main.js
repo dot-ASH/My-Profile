@@ -2,7 +2,6 @@ if (typeof window !== "undefined") {
   const c1 = document.getElementById("c1");
   const c2 = document.getElementById("c2");
   const c3 = document.getElementById("c3");
-  const clip = document.getElementById("clip");
   const about = document.getElementById("about");
   const dpBG = document.querySelectorAll(".dp");
   const yearBG = document.querySelector(".year-text-bg");
