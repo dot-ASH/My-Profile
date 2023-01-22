@@ -3,6 +3,8 @@ import { Fade, Slide } from "react-reveal";
 import { Zoom } from "react-reveal";
 import { ReactCurvedText } from "react-curved-text";
 import { CldImage } from 'next-cloudinary';
+import Image from "next/image";
+import cf from "../public/cf1.png";
 
 const Display = () => {
   return (
@@ -176,8 +178,8 @@ const Display = () => {
             </p>
           </b>
         </div>
-        <img
-          src="/cf1.png"
+        <Image
+          src={cf}
           className="cf"
           alt="cool right?"
         />
