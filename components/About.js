@@ -42,7 +42,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex flex-col h-[40rem] sm:h-[97vh] rounded-t-[4rem] rounded-b-[1rem] justify-center sm:mt-[1rem]"
+      className="flex flex-col h-[97vh] rounded-t-[4rem] rounded-b-[1rem] justify-center sm:mt-[1rem]"
     >
       {/* Progress Bar  */}
       <div className="flex gap-[1rem] pl-[1rem] w-[100%] justify-center items-center h-[6rem] text-3xl z-[100]">
@@ -99,8 +99,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className=" flex flex-col justify-center items-center w-full sm:w-[40%] h-[100%] text-color">
-            <div className="grid grid-section grid-cols-3 gap-x-[4rem] h-[60%] sm:ml-[0px] ">
+          <div className=" flex flex-col justify-center items-center w-full sm:w-[40%]  h-[100%] text-color">
+            <div className="grid grid-section grid-cols-3 h-[60%] sm:ml-[0px] ">
               <Slide direction="up">
                 <Tippy
                   content={icons[0].name}

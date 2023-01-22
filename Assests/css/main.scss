@@ -157,7 +157,7 @@ $my-font: "carmine";
   position: absolute;
   content: "";
   border: 1px solid rgb(124, 124, 124);
-  top: 12%;
+  top: 16%;
   right: 2%;
   width: 220px;
   height: 224px;
@@ -283,7 +283,7 @@ $my-font: "carmine";
   padding: 2rem;
   margin-bottom: 1rem;
   overflow: hidden;
-  column-gap: -5rem;
+  column-gap: 4rem;
 }
 
 .custom-tooltip {
@@ -345,7 +345,7 @@ $my-font: "carmine";
   }
 
   .home {
-    height: 37rem;
+    height: 42rem;
   }
 
   .tooltiptext {
@@ -356,21 +356,21 @@ $my-font: "carmine";
   }
   .cf {
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 17%;
+    left: 3%;
   }
   .small-show::before {
     content: "";
     position: absolute;
     width: auto;
     border-top: 1px solid #ffe5d9;
-    bottom: 52%;
+    bottom: 48%;
     left: 2em;
     right: 2em;
     z-index: 50;
   }
   .small-show {
-    height: 52rem;
+    height: 55rem;
     color: #494f42;
     position: relative;
     background: #242323;
@@ -400,6 +400,7 @@ $my-font: "carmine";
     border-bottom-right-radius: 226px;
     z-index: 100;
   }
+  
   
 }
 
@@ -436,5 +437,14 @@ $my-font: "carmine";
   .typo p {
     font-size: 18px;
     line-height: 35px;
+  }
+
+  .grid-section {
+    row-gap: 5rem;
+    margin-top: -1rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    column-gap: 6rem;
   }
 }

@@ -9,7 +9,7 @@ import cf from "../public/cf1.png";
 const Display = () => {
   return (
     <section id="display">
-      <div className="home flex justify-between py-[1rem] mt-[1rem] 2xl:mx-[3rem]">
+      <div className="home flex justify-between sm:py-[1rem] sm:mt-[1rem] 2xl:mx-[3rem]">
         {/* Left */}
         <div className="flex w-[35%] sm:mt-[4rem]">
           <Fade left>
@@ -151,7 +151,7 @@ const Display = () => {
           </div>
         </Fade>
       </div>
-      <div className="absolute pt-[17rem] relative small-show sm:hidden gap-[2rem]">
+      <div className="absolute pt-[21rem] relative small-show sm:hidden gap-[2rem]">
         <Slide left>
           <div className=" pl-[2rem] pb-[2rem] quote-font text-[#bfaca4]">
             The eyes, the contents <br />
@@ -160,13 +160,13 @@ const Display = () => {
           </div>
         </Slide>
         <Slide right>
-          <div className="pr-[2rem] pt-[-1rem] text-right quote-font text-[#bfaca4]">
+          <div className="pr-[2rem] pt-[1rem] text-right quote-font text-[#bfaca4]">
             BW or vivid <br />
             Films, we love it <br /> Slumberous nd morning
             <br /> Music,keep breathing
           </div>
         </Slide>
-        <div className="name absolute mt-[0.5rem] z-[1000]">
+        <div className="name absolute z-[1000] mt-[-3rem]">
           <b>
             <p className="non-prime-font uppercase sm:text-[4vw] text-[#ffe5d9] smoothed disable-select">
               Sakir
@@ -184,7 +184,7 @@ const Display = () => {
           alt="cool right?"
         />
         <div className="override-line">
-          <div className="flex absolute bg-[black] w-[200px] dp-small top-[10%] right-[0%] overflow-hidden opacity-[1]">
+          <div className="flex absolute bg-[black] w-[200px] dp-small top-[15%] right-[0%] overflow-hidden opacity-[1]">
             <CldImage
               src={process.env.NEXT_PUBLIC_PRIMARY}
               width="5000"
