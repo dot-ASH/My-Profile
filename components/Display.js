@@ -2,15 +2,14 @@ import React from "react";
 import { Fade, Slide } from "react-reveal";
 import { Zoom } from "react-reveal";
 import { ReactCurvedText } from "react-curved-text";
-import Image from "next/image";
-import { CldImage } from "next-cloudinary";
-import cf from "../public/cf1.png";
+import { CldImage } from 'next-cloudinary';
+
 const Display = () => {
   return (
     <section id="display">
       <div className="home flex justify-between py-[1rem] mt-[1rem] 2xl:mx-[3rem]">
         {/* Left */}
-        <div className="flex w-[35%]">
+        <div className="flex w-[35%] sm:mt-[4rem]">
           <Fade left>
             <div className="hidden sm:flex flex-row absolute justify-end dp-02 w-[200px] h-[250px] rounded-[0.3rem] showBorder overflow-hidden">
               <CldImage
@@ -26,7 +25,7 @@ const Display = () => {
             </div>
           </Fade>
           <Fade left>
-            <div className="name block relative mt-[20rem] 2xl:mt-[25rem] ml-[4rem] z-[1000]">
+            <div className="name block relative mt-[18rem] 2xl:mt-[20rem] ml-[4rem] z-[1000]">
               <b>
                 <p className="hidden sm:block non-prime-font uppercase text-[4vw] text-[#ffe5d9] smoothed disable-select">
                   Sakir

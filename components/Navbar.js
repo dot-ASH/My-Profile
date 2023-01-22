@@ -3,6 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <section id="nav-div">
+      <img src="/bg.jpg" className="bg-image" alt="bg"></img>
       <div className="flex items-center justify-around pt-[1rem] sm:ml-[1rem]">
         {/* left */}
         <div className="flex items-center pl-5 py-6 shrink-0">
@@ -21,7 +22,9 @@ const Navbar = () => {
           <p className="about-text lowercase prime-font cursor-pointer underline-effect smoothed text-right">
             about
           </p>
-          <p className="font-bold text-2xl lowercase prime-font smoothed text-right">~</p>
+          <p className="font-bold text-2xl lowercase prime-font smoothed text-right">
+            ~
+          </p>
           <div className="cursor-pointer underline-effect custom-tooltip">
             <p id="customTooltip" className="prime-font  lowercase smoothed">
               portfolio{" "}

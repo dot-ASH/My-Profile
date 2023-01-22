@@ -14,32 +14,31 @@ import { TbBrandNextjs } from "react-icons/tb";
 import Tippy from "@tippy.js/react";
 import "tippy.js/dist/tippy.css";
 
-const icons = [
-  {
-    id: 1,
-    name: "Phone",
-    url: "tel:01963606880",
-  },
-  {
-    id: 2,
-    name: "Gmail",
-    url: "mailto:nafeesashker63@gmail.com",
-  },
-  {
-    id: 3,
-    name: "Facebook",
-    url: "https://www.facebook.com/5ive0ero?mibextid=ZbWKwL",
-  },
-  {
-    id: 4,
-    name: "Discord",
-    url: "https://discord.com/users/738030761269133343",
-  },
-  { id: 5, name: "Instagram", url: "https://www.instagram.com/sakirashker/" },
-  { id: 6, name: "Twitter", url: "https://twitter.com/Sakirashker/" },
-];
-
 const About = () => {
+  const icons = [
+    {
+      id: 1,
+      name: "Phone",
+      url: "tel:01963606880",
+    },
+    {
+      id: 2,
+      name: "Gmail",
+      url: "mailto:nafeesashker63@gmail.com",
+    },
+    {
+      id: 3,
+      name: "Facebook",
+      url: "https://www.facebook.com/5ive0ero?mibextid=ZbWKwL",
+    },
+    {
+      id: 4,
+      name: "Discord",
+      url: "https://discord.com/users/738030761269133343",
+    },
+    { id: 5, name: "Instagram", url: "https://www.instagram.com/sakirashker/" },
+    { id: 6, name: "Twitter", url: "https://twitter.com/Sakirashker/" },
+  ];
   return (
     <div
       id="about"
