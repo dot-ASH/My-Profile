@@ -19,7 +19,7 @@ const Display = () => {
                 width={3000}
                 height={3000}
                 alt="Tired"
-                className="cloud-image alt-image absolute"
+                className="cloud-image alt-image"
               ></CldImage>
               <div className="flex absolute year-text-bg justify-center items-center bottom-[0%] w-[100%] h-[15%]">
                 <p className="prime-font text-2xl">'21</p>
@@ -151,22 +151,22 @@ const Display = () => {
           </div>
         </Fade>
       </div>
-      <div className="absolute justify-between relative small-show sm:hidden h-[100vh] gap-[2rem]">
+      <div className="absolute pt-[17rem] relative small-show sm:hidden gap-[2rem]">
         <Slide left>
-          <div className="flex flex-col  justify-end h-[50%] pl-[2rem] pb-[1rem] quote-font text-[#7C7C7C]">
+          <div className=" pl-[2rem] pb-[2rem] quote-font text-[#bfaca4]">
             The eyes, the contents <br />
             Coffee and sunsets <br /> The walk, the hair <br />
             Sweetens the air
           </div>
         </Slide>
         <Slide right>
-          <div className="pr-[2rem] pt-[1rem] text-right quote-font text-[#7C7C7C]">
+          <div className="pr-[2rem] pt-[-1rem] text-right quote-font text-[#bfaca4]">
             BW or vivid <br />
             Films, we love it <br /> Slumberous nd morning
             <br /> Music,keep breathing
           </div>
         </Slide>
-        <div className="name absolute top-[0%] z-[1000]">
+        <div className="name absolute mt-[0.5rem] z-[1000]">
           <b>
             <p className="non-prime-font uppercase sm:text-[4vw] text-[#ffe5d9] smoothed disable-select">
               Sakir
