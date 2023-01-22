@@ -12,8 +12,7 @@ const Display = () => {
     <section id="display">
       <div className="home flex justify-between py-[1rem] my-[1rem] 2xl:mx-[3rem]">
         {/* Left */}
-        {/* <Zoom direction="left"> */}
-        <div className="flex w-[35%] sm:mt-[4rem]">
+        <div className="flex w-[35%] sm:mt-[4rem] relative">
           <div className="hidden sm:flex flex-row absolute justify-end dp-02 w-[200px] h-[250px] rounded-[0.3rem] showBorder overflow-hidden">
             <CldImage
               src={process.env.NEXT_PUBLIC_SECONDARY}
@@ -40,18 +39,54 @@ const Display = () => {
               </p>
             </b>
           </div>
-          <div className="sm:hidden absolute w-[95px]">
-            <p className="relative text-[#ffe5d9] text-3xl font-[Cousine] mt-[25rem] z-[40] text-center">
-              SHE
+          <div className="sm:hidden absolute ">
+            <p className="relative text-[#ffe5d9] text-3xl font-[Cousine] mt-[23rem] ml-[1rem] z-[40] text-right">
+              WHEEZY
               <br />
-              KNOWS
+              OUTTA
+              <br />
+              HERE
             </p>
           </div>
         </div>
-        {/* </Zoom> */}
-        {/* </Fade> */}
         {/* Middle */}
-        <div className="sm:hidden flex relative justify-center items-center w-[35%]">
+        {/* extra */}
+        <div className="extra-small sm:hidden flex relative justify-center items-center w-[35%]">
+          <div className="flex dp-border justify-center items-center ">
+            <div className="flex dp relative justify-center overflow-hidden">
+              <div className="absolute left-[3px] z-[1050] cookie-text">
+                <ReactCurvedText
+                  width="500"
+                  height="300"
+                  cx="158"
+                  cy="176"
+                  rx="141"
+                  ry="151"
+                  startOffset="44"
+                  reversed={true}
+                  text="'till the retrograde is done"
+                  textProps={{ style: { fontSize: 20 } }}
+                  textPathProps={null}
+                  tspanProps={null}
+                  ellipseProps={null}
+                  svgProps={null}
+                  className="cookie-text"
+                />
+              </div>
+              <div className="absolute left-[0%] h-full w-full bg-[]">
+                <CldImage
+                  width={1000}
+                  height={2000}
+                  src={process.env.NEXT_PUBLIC_DP}
+                  alt="of Your"
+                  className="cloud-dp"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* small */}
+        <div className="s-dp sm:hidden flex relative justify-center items-center w-[35%]">
           <div className="flex dp-border justify-center items-center ">
             <div className="flex dp relative justify-center overflow-hidden">
               <div className="absolute left-[3px] z-[1050] cookie-text">
@@ -85,6 +120,7 @@ const Display = () => {
             </div>
           </div>
         </div>
+        {/* medium */}
         <div className="hidden sm:flex relative justify-center items-center w-[35%]">
           <div className="flex dp-border justify-center items-center ">
             <div className="flex dp relative justify-center overflow-hidden">
@@ -176,20 +212,18 @@ const Display = () => {
           </b>
         </div>
         <Image src={cf} className="cf" alt="cool right?" />
-         <Fade cascade>
-        <div className="override-line">
-       
-          <div className="flex absolute bg-[black] w-[200px] dp-small top-[15%] right-[0%] overflow-hidden opacity-[1]">
-            <CldImage
-              src={process.env.NEXT_PUBLIC_PRIMARY}
-              width="5000"
-              height="5000"
-              alt="of Your"
-              className="hover:scale-110 duration-500 ease-out z-[300]"
-            ></CldImage>
+        <Fade cascade>
+          <div className="override-line">
+            <div className="flex absolute bg-[black] w-[200px] dp-small top-[15%] right-[0%] overflow-hidden opacity-[1]">
+              <CldImage
+                src={process.env.NEXT_PUBLIC_PRIMARY}
+                width="5000"
+                height="5000"
+                alt="of Your"
+                className="hover:scale-110 duration-500 ease-out z-[300]"
+              ></CldImage>
+            </div>
           </div>
-          
-        </div>
         </Fade>
         <Fade cascade>
           <div className="flex absolute dp-02 w-[250px] h-[270px] rounded-[0.3rem] overflow-hidden opacity-[0.7] bottom-[7%] z-[100]">
