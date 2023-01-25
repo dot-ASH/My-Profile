@@ -1,11 +1,6 @@
 import React from "react";
-import {
-  Fade as ReactFade,
-  Slide as ReactSlide,
-  Zoom as ReactZoom,
-} from "react-reveal";
+import { Fade as ReactFade, Zoom as ReactZoom } from "react-reveal";
 import { Fade, Slide } from "react-awesome-reveal";
-// import { Zoom } from "react-reveal";
 import { ReactCurvedText } from "react-curved-text";
 import { CldImage } from "next-cloudinary";
 import Image from "next/image";
@@ -17,21 +12,21 @@ const Display = () => {
       <div className="home flex justify-between py-[1rem] my-[1rem] 2xl:mx-[3rem]">
         {/* Left */}
         <div className="flex w-[35%] sm:mt-[4rem] relative">
-        <ReactFade left>
-          <div className="hidden sm:flex flex-row absolute justify-end dp-02 w-[200px] h-[250px] rounded-[0.3rem] showBorder overflow-hidden">
-            <CldImage
-              src={process.env.NEXT_PUBLIC_SECONDARY}
-              width={3000}
-              height={3000}
-              alt="Tired"
-              className="cloud-image alt-image"
-            ></CldImage>
+          <ReactFade left>
+            <div className="hidden sm:flex flex-row absolute justify-end dp-02 w-[200px] h-[250px] rounded-[0.3rem] showBorder overflow-hidden">
+              <CldImage
+                src={process.env.NEXT_PUBLIC_SECONDARY}
+                width={3000}
+                height={3000}
+                alt="Tired"
+                className="cloud-image alt-image"
+              ></CldImage>
 
-            <div className="flex absolute year-text-bg justify-center items-center bottom-[0%] w-[100%] h-[15%]">
-              <p className="prime-font text-2xl">'21</p>
+              <div className="flex absolute year-text-bg justify-center items-center bottom-[0%] w-[100%] h-[15%]">
+                <p className="prime-font text-2xl">'21</p>
+              </div>
             </div>
-          </div>
-        </ReactFade>
+          </ReactFade>
           <div className="name block relative mt-[18rem] 2xl:mt-[20rem] ml-[4rem] z-[1000]">
             <b>
               <p className="hidden sm:block non-prime-font uppercase text-[4vw] text-[#ffe5d9] smoothed disable-select">
@@ -200,21 +195,21 @@ const Display = () => {
         </div>
       </div>
       <div className="absolute pt-[22rem] relative small-show sm:hidden gap-[2rem]">
-        <Slide direction="left" duration={1000}>
+        <Slide direction="left" duration={1500}>
           <div className=" pl-[2rem] pb-[2rem] quote-font text-[#bfaca4]">
             The eyes, the contents <br />
             Coffee and sunsets <br /> The walk, the hair <br />
             Sweetens the air
           </div>
         </Slide>
-        <Slide direction="right" delay={200} duration={1000}>
+        <Slide direction="right" delay={200} duration={1500}>
           <div className="pr-[2rem] pt-[1rem] text-right quote-font text-[#bfaca4] z-[500]">
             BW or vivid <br />
             Films, we love it <br /> Slumberous nd morning
             <br /> Music,keep breathing
           </div>
         </Slide>
-        <div className="name absolute z-[1000] mt-[-4rem]">
+        <div className="name absolute z-[1000] mt-[-3rem]">
           <b>
             <p className="non-prime-font uppercase sm:text-[4vw] text-[#ffe5d9] smoothed disable-select">
               Sakir
