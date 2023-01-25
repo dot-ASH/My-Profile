@@ -127,20 +127,8 @@ const About = () => {
               </Slide>
               <Slide direction="up">
                 <Tippy
-                  content={icons[2].name}
-                  placement="right"
-                  theme="bootstrap"
-                  arrow={false}
-                >
-                  <a href={icons[2].url} target="_blank">
-                    <SlSocialFacebook className="text-3xl grid-item"></SlSocialFacebook>
-                  </a>
-                </Tippy>
-              </Slide>
-              <Slide direction="up" delay={200}>
-                <Tippy
                   content={icons[3].name}
-                  placement="left"
+                  placement="right"
                   theme="bootstrap"
                   arrow={false}
                 >
@@ -151,8 +139,20 @@ const About = () => {
               </Slide>
               <Slide direction="down">
                 <Tippy
+                  content={icons[2].name}
+                  placement="left"
+                  theme="bootstrap"
+                  arrow={false}
+                >
+                  <a href={icons[2].url} target="_blank">
+                    <SlSocialFacebook className="text-3xl grid-item"></SlSocialFacebook>
+                  </a>
+                </Tippy>
+              </Slide>
+              <Slide direction="up" delay={200}>
+                <Tippy
                   content={icons[4].name}
-                  placement="bottom"
+                  placement="down"
                   theme="bootstrap"
                   arrow={false}
                 >

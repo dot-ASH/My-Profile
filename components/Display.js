@@ -1,6 +1,10 @@
 import React from "react";
-import { rFade, rSlide } from "react-reveal";
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import {
+  Fade as ReactFade,
+  Slide as ReactSlide,
+  Zoom as ReactZoom,
+} from "react-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 // import { Zoom } from "react-reveal";
 import { ReactCurvedText } from "react-curved-text";
 import { CldImage } from "next-cloudinary";
@@ -13,6 +17,7 @@ const Display = () => {
       <div className="home flex justify-between py-[1rem] my-[1rem] 2xl:mx-[3rem]">
         {/* Left */}
         <div className="flex w-[35%] sm:mt-[4rem] relative">
+        <ReactFade left>
           <div className="hidden sm:flex flex-row absolute justify-end dp-02 w-[200px] h-[250px] rounded-[0.3rem] showBorder overflow-hidden">
             <CldImage
               src={process.env.NEXT_PUBLIC_SECONDARY}
@@ -26,7 +31,7 @@ const Display = () => {
               <p className="prime-font text-2xl">'21</p>
             </div>
           </div>
-
+        </ReactFade>
           <div className="name block relative mt-[18rem] 2xl:mt-[20rem] ml-[4rem] z-[1000]">
             <b>
               <p className="hidden sm:block non-prime-font uppercase text-[4vw] text-[#ffe5d9] smoothed disable-select">
@@ -39,167 +44,177 @@ const Display = () => {
               </p>
             </b>
           </div>
-          <div className="sm:hidden absolute ">
-            <p className="relative text-[#ffe5d9] text-3xl font-[Cousine] mt-[23rem] ml-[1rem] z-[40] text-right">
-              WHEEZY
-              <br />
-              OUTTA
-              <br />
-              HERE
-            </p>
-          </div>
+          <ReactFade left>
+            <div className="sm:hidden absolute ">
+              <p className="relative text-[#ffe5d9] text-3xl quote-font mt-[25rem] ml-[-1rem] z-[40] text-right">
+                WHEEZY &nbsp;
+                <br />
+                OUTTA &nbsp;
+                <br />
+                HERE
+              </p>
+            </div>
+          </ReactFade>
         </div>
         {/* Middle */}
         {/* extra */}
         <div className="extra-small sm:hidden flex relative justify-center items-center w-[35%]">
-          <div className="flex dp-border justify-center items-center ">
-            <div className="flex dp relative justify-center overflow-hidden">
-              <div className="absolute left-[3px] z-[1050] cookie-text">
-                <ReactCurvedText
-                  width="500"
-                  height="300"
-                  cx="158"
-                  cy="176"
-                  rx="141"
-                  ry="151"
-                  startOffset="44"
-                  reversed={true}
-                  text="'till the retrograde is done"
-                  textProps={{ style: { fontSize: 20 } }}
-                  textPathProps={null}
-                  tspanProps={null}
-                  ellipseProps={null}
-                  svgProps={null}
-                  className="cookie-text"
-                />
-              </div>
-              <div className="absolute left-[0%] h-full w-full bg-[]">
-                <CldImage
-                  width={1000}
-                  height={2000}
-                  src={process.env.NEXT_PUBLIC_DP}
-                  alt="of Your"
-                  className="cloud-dp"
-                />
+          <ReactZoom>
+            <div className="flex dp-border justify-center items-center ">
+              <div className="flex dp relative justify-center overflow-hidden">
+                <div className="absolute left-[3px] z-[1050] cookie-text">
+                  <ReactCurvedText
+                    width="500"
+                    height="300"
+                    cx="158"
+                    cy="176"
+                    rx="141"
+                    ry="151"
+                    startOffset="44"
+                    reversed={true}
+                    text="'till the retrograde is done"
+                    textProps={{ style: { fontSize: 20 } }}
+                    textPathProps={null}
+                    tspanProps={null}
+                    ellipseProps={null}
+                    svgProps={null}
+                    className="cookie-text"
+                  />
+                </div>
+                <div className="absolute left-[0%] h-full w-full bg-[]">
+                  <CldImage
+                    width={1000}
+                    height={2000}
+                    src={process.env.NEXT_PUBLIC_DP}
+                    alt="of Your"
+                    className="cloud-dp"
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          </ReactZoom>
         </div>
         {/* small */}
         <div className="s-dp sm:hidden flex relative justify-center items-center w-[35%]">
-          <div className="flex dp-border justify-center items-center ">
-            <div className="flex dp relative justify-center overflow-hidden">
-              <div className="absolute left-[3px] z-[1050] cookie-text">
-                <ReactCurvedText
-                  width="500"
-                  height="300"
-                  cx="167"
-                  cy="180"
-                  rx="147"
-                  ry="151"
-                  startOffset="50"
-                  reversed={true}
-                  text="'till the retrograde is done"
-                  textProps={{ style: { fontSize: 20 } }}
-                  textPathProps={null}
-                  tspanProps={null}
-                  ellipseProps={null}
-                  svgProps={null}
-                  className="cookie-text"
-                />
-              </div>
-              <div className="absolute left-[0%] h-full w-full bg-[]">
-                <CldImage
-                  width={1000}
-                  height={2000}
-                  src={process.env.NEXT_PUBLIC_DP}
-                  alt="of Your"
-                  className="cloud-dp"
-                />
+          <ReactZoom>
+            <div className="flex dp-border justify-center items-center ">
+              <div className="flex dp relative justify-center overflow-hidden">
+                <div className="absolute left-[3px] z-[1050] cookie-text">
+                  <ReactCurvedText
+                    width="500"
+                    height="300"
+                    cx="167"
+                    cy="180"
+                    rx="147"
+                    ry="151"
+                    startOffset="50"
+                    reversed={true}
+                    text="'till the retrograde is done"
+                    textProps={{ style: { fontSize: 20 } }}
+                    textPathProps={null}
+                    tspanProps={null}
+                    ellipseProps={null}
+                    svgProps={null}
+                    className="cookie-text"
+                  />
+                </div>
+                <div className="absolute left-[0%] h-full w-full bg-[]">
+                  <CldImage
+                    width={1000}
+                    height={2000}
+                    src={process.env.NEXT_PUBLIC_DP}
+                    alt="of Your"
+                    className="cloud-dp"
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          </ReactZoom>
         </div>
         {/* medium */}
         <div className="hidden sm:flex relative justify-center items-center w-[35%]">
-          <div className="flex dp-border justify-center items-center ">
-            <div className="flex dp relative justify-center overflow-hidden">
-              <div className="absolute left-[3px] z-[1050] cookie-text">
-                <ReactCurvedText
-                  width="500"
-                  height="300"
-                  cx="182"
-                  cy="180"
-                  rx="155"
-                  ry="151"
-                  startOffset="57"
-                  reversed={true}
-                  text="'till the retrograde is done"
-                  textProps={{ style: { fontSize: 20 } }}
-                  textPathProps={null}
-                  tspanProps={null}
-                  ellipseProps={null}
-                  svgProps={null}
-                  className="cookie-text"
-                />
-              </div>
-              <div className="absolute left-[0%] h-full w-full bg-[]">
-                <CldImage
-                  width={1000}
-                  height={2000}
-                  src={process.env.NEXT_PUBLIC_DP}
-                  alt="of Your"
-                  className="cloud-dp"
-                />
+          <ReactZoom>
+            <div className="flex dp-border justify-center items-center ">
+              <div className="flex dp relative justify-center overflow-hidden">
+                <div className="absolute left-[3px] z-[1050] cookie-text">
+                  <ReactCurvedText
+                    width="500"
+                    height="300"
+                    cx="182"
+                    cy="180"
+                    rx="155"
+                    ry="151"
+                    startOffset="57"
+                    reversed={true}
+                    text="'till the retrograde is done"
+                    textProps={{ style: { fontSize: 20 } }}
+                    textPathProps={null}
+                    tspanProps={null}
+                    ellipseProps={null}
+                    svgProps={null}
+                    className="cookie-text"
+                  />
+                </div>
+                <div className="absolute left-[0%] h-full w-full bg-[]">
+                  <CldImage
+                    width={1000}
+                    height={2000}
+                    src={process.env.NEXT_PUBLIC_DP}
+                    alt="of Your"
+                    className="cloud-dp"
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          </ReactZoom>
         </div>
         {/* Right */}
 
         <div className="flex relative items-center  w-[35%] dp-container">
-          <div className="sm:hidden absolute ">
-            <p className="relative text-[#ffe5d9] text-3xl font-[Cousine] ml-[1rem] mt-[-15rem] z-[40]">
-              YES
-              <br />
-              INDEED
-            </p>
-            <p className="text-3xl font-[Cousine] outline-text text-[white] ml-[4rem] mt-[-1rem] z-[20]">
-              YES
-              <br />
-              INDEED
-            </p>
-          </div>
-
-          <div className="hidden sm:flex absolute dp-01   left-[35%] w-[305px] rounded-[3rem] showBorder overflow-hidden">
-            {/* <Zoom direction="right"> */}
-            <CldImage
-              src={process.env.NEXT_PUBLIC_PRIMARY}
-              width="5000"
-              height="5000"
-              className="hover:scale-110 duration-500 ease-out"
-              alt="Silly Shit"
-            ></CldImage>
-            {/* </Zoom> */}
-          </div>
+          <ReactFade right>
+            <div className="sm:hidden absolute ">
+              <p className="relative text-[#ffe5d9] text-3xl font-[Cousine] ml-[1rem] mt-[-15rem] z-[40]">
+                YES
+                <br />
+                INDEED
+              </p>
+              <p className="text-3xl font-[Cousine] outline-text text-[white] ml-[4rem] mt-[-1rem] z-[20]">
+                YES
+                <br />
+                &nbsp;INDEED
+              </p>
+            </div>
+          </ReactFade>
+          <ReactFade right>
+            <div className="hidden sm:flex absolute dp-01   left-[35%] w-[305px] rounded-[3rem] showBorder overflow-hidden">
+              <CldImage
+                src={process.env.NEXT_PUBLIC_PRIMARY}
+                width="5000"
+                height="5000"
+                className="hover:scale-110 duration-500 ease-out"
+                alt="Silly Shit"
+              ></CldImage>
+              {/* </Zoom> */}
+            </div>
+          </ReactFade>
         </div>
       </div>
       <div className="absolute pt-[22rem] relative small-show sm:hidden gap-[2rem]">
-        <Slide direction="left">
+        <Slide direction="left" duration={1000}>
           <div className=" pl-[2rem] pb-[2rem] quote-font text-[#bfaca4]">
             The eyes, the contents <br />
             Coffee and sunsets <br /> The walk, the hair <br />
             Sweetens the air
           </div>
         </Slide>
-        <Slide direction="right">
-          <div className="pr-[2rem] pt-[1rem] text-right quote-font text-[#bfaca4]">
+        <Slide direction="right" delay={200} duration={1000}>
+          <div className="pr-[2rem] pt-[1rem] text-right quote-font text-[#bfaca4] z-[500]">
             BW or vivid <br />
             Films, we love it <br /> Slumberous nd morning
             <br /> Music,keep breathing
           </div>
         </Slide>
-        <div className="name absolute z-[1000] mt-[-3rem]">
+        <div className="name absolute z-[1000] mt-[-4rem]">
           <b>
             <p className="non-prime-font uppercase sm:text-[4vw] text-[#ffe5d9] smoothed disable-select">
               Sakir
@@ -212,7 +227,7 @@ const Display = () => {
           </b>
         </div>
         <Image src={cf} className="cf" alt="cool right?" />
-        <Fade cascade>
+        <Fade duration={1500}>
           <div className="override-line">
             <div className="flex absolute bg-[black] w-[200px] dp-small top-[15%] right-[0%] overflow-hidden opacity-[1]">
               <CldImage
@@ -225,8 +240,8 @@ const Display = () => {
             </div>
           </div>
         </Fade>
-        <Fade cascade>
-          <div className="flex absolute dp-02 w-[250px] h-[270px] rounded-[0.3rem] overflow-hidden opacity-[0.7] bottom-[7%] z-[100]">
+        <Fade duration={1500}>
+          <div className="flex absolute dp-02 w-[250px] h-[270px] rounded-[0.3rem] overflow-hidden opacity-[0.7] bottom-[7%] z-[1000]">
             <CldImage
               src={process.env.NEXT_PUBLIC_SECONDARY}
               width={3000}
