@@ -466,15 +466,36 @@ $my-font: "carmine";
     border-bottom-right-radius: 226px;
     z-index: 100;
   }
+  .left-display {
+    transform: scale(1.1);
+    margin-top: 7rem;
+  }
+  .right-display {
+    transform: scale(1.1);
+    margin-top: 3rem;
+  }
+  .m-dp{
+    transform: scale(1.1);
+  }
+
+  #about div{
+    transform: scale(1.02);
+  }
 }
 
 // Long
-@media (min-width: 640px) and (max-height: 650px) {
+@media (min-width: 640px) and (max-height: 700px) {
   #about {
     height: 42rem;
   }
   .home {
     height: 32rem;
+  }
+  .navbar {
+    padding-top: 0rem;
+  }
+  .grid-section {
+    margin-bottom: 3rem;
   }
 }
 
@@ -494,6 +515,9 @@ $my-font: "carmine";
 }
 
 @media (min-width: 640px) and (min-height: 850px) {
+  // * {
+  //   transform: scale(1.005);
+  // }
   .home {
     height: 77vh;
   }
@@ -501,6 +525,15 @@ $my-font: "carmine";
 
 // Large
 @media (min-width: 1536px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
   .dp-container::before {
     position: absolute;
     margin-left: 150px;
@@ -518,9 +551,7 @@ $my-font: "carmine";
 
   .grid-section {
     row-gap: 5rem;
-    margin-top: -1rem;
     padding: 2rem;
-    margin-bottom: 1rem;
     overflow: visible;
     column-gap: 6rem;
   }

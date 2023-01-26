@@ -113,7 +113,7 @@ const About = () => {
                   </a>
                 </Tippy>
               </Slide>
-              <Slide direction="down" delay={200}>
+              <Slide direction="down">
                 <Tippy
                   content={icons[1].name}
                   placement="top"
@@ -125,7 +125,7 @@ const About = () => {
                   </a>
                 </Tippy>
               </Slide>
-              <Slide direction="up">
+              <Slide direction="up" delay={200}>
                 <Tippy
                   content={icons[3].name}
                   placement="right"
@@ -137,7 +137,7 @@ const About = () => {
                   </a>
                 </Tippy>
               </Slide>
-              <Slide direction="down">
+              <Slide direction="up">
                 <Tippy
                   content={icons[2].name}
                   placement="left"
@@ -149,7 +149,7 @@ const About = () => {
                   </a>
                 </Tippy>
               </Slide>
-              <Slide direction="up" delay={200}>
+              <Slide direction="down" delay={200}>
                 <Tippy
                   content={icons[4].name}
                   placement="down"

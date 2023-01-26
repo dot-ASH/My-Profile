@@ -11,7 +11,7 @@ const Display = () => {
     <section id="display">
       <div className="home flex justify-between py-[1rem] my-[1rem] 2xl:mx-[3rem]">
         {/* Left */}
-        <div className="flex w-[35%] sm:mt-[4rem] relative">
+        <div className="flex w-[35%] sm:mt-[4rem] relative left-display">
           <ReactFade left>
             <div className="hidden sm:flex flex-row absolute justify-end dp-02 w-[200px] h-[250px] rounded-[0.3rem] showBorder overflow-hidden">
               <CldImage
@@ -127,7 +127,7 @@ const Display = () => {
           </ReactZoom>
         </div>
         {/* medium */}
-        <div className="hidden sm:flex relative justify-center items-center w-[35%]">
+        <div className="m-dp hidden sm:flex relative justify-center items-center w-[35%]">
           <ReactZoom>
             <div className="flex dp-border justify-center items-center ">
               <div className="flex dp relative justify-center overflow-hidden">
@@ -165,7 +165,7 @@ const Display = () => {
         </div>
         {/* Right */}
 
-        <div className="flex relative items-center  w-[35%] dp-container">
+        <div className="flex relative items-center  w-[35%] dp-container right-display">
           <ReactFade right>
             <div className="sm:hidden absolute ">
               <p className="relative text-[#ffe5d9] text-3xl font-[Cousine] ml-[1rem] mt-[-15rem] z-[40]">
