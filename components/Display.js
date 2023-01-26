@@ -236,7 +236,7 @@ const Display = () => {
           </div>
         </Fade>
         <Fade duration={1500}>
-          <div className="flex absolute dp-02 w-[250px] h-[270px] rounded-[0.3rem] overflow-hidden opacity-[0.7] bottom-[7%] z-[1000]">
+          <div className="flex absolute dp-02 w-[250px] h-[270px] rounded-[0.3rem] overflow-hidden opacity-[0.7] bottom-[6%] left-[4em] z-[1000]">
             <CldImage
               src={process.env.NEXT_PUBLIC_SECONDARY}
               width={3000}
