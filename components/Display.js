@@ -13,7 +13,7 @@ const Display = () => {
         {/* Left */}
         <div className="flex w-[35%] sm:mt-[4rem] relative left-display">
           <ReactFade left>
-            <div className="hidden sm:flex flex-row absolute justify-end dp-02 w-[215px] h-[250px] rounded-[0.3rem] showBorder xl:ml-[3rem] overflow-hidden ">
+            <div className="hidden sm:flex flex-row absolute justify-end dp-02 w-[215px] h-[250px] rounded-[0.3rem] showBorder xl:ml-[2rem] 2xl:ml-[3rem] overflow-hidden ">
               <CldImage
                 src={process.env.NEXT_PUBLIC_SECONDARY}
                 width={3000}

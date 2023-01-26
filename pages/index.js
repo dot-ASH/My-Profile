@@ -18,13 +18,13 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <Script></Script>
       </Head>
-      {/* Navbar */}
-      <Navbar />
-      {/* Home */}
-      <Display />
-      {/* About */}
-      <About></About>
-      {/* </div> */}
+        {/* Navbar */}
+        <Navbar />
+        {/* Home */}
+        <Display />
+        {/* About */}
+        <About></About>
+        {/* </div> */}
     </>
   );
 }
