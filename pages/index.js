@@ -1,11 +1,9 @@
 import Head from "next/head";
-// import { Inter } from "@next/font/google";
 import Navbar from "../components/Navbar";
 import Display from "../components/Display";
 import About from "../components/About";
 import Script from "next/script";
 
-// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -24,7 +22,6 @@ export default function Home() {
         <Display />
         {/* About */}
         <About></About>
-        {/* </div> */}
     </>
   );
 }
