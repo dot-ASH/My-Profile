@@ -6,8 +6,7 @@ const Navbar = () => {
   return (
     <section id="nav-div">
       <Image src={bg} className="bg-image" alt="bg"></Image>
-      {/* <Image src="/bg.jpg" className="bg-image" alt="bg"></Image> */}
-      <div className="navbar flex items-center justify-around pt-[1rem] sm:ml-[1rem] 2xl:mx-[4rem] 2xl:ml-[6rem] 2xl:pt-[2rem] ">
+      <div className="navbar flex items-center justify-around pt-[1rem] md:ml-[3em] sm:ml-[1rem] xl:mx-[4rem] xl:ml-[6rem] xl:pt-[2rem] ">
         {/* left */}
         <div className="flex items-center pl-5 py-6 shrink-0">
           <div className="text-4xl ">

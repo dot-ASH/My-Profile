@@ -9,11 +9,11 @@ import cf from "../public/cf1.png";
 const Display = () => {
   return (
     <section id="display">
-      <div className="home flex justify-between py-[1rem] my-[1rem] 2xl:mx-[3rem]">
+      <div className="home flex justify-between py-[1rem] my-[1rem] sm:mx-[3rem] lg:mx-[4rem]">
         {/* Left */}
         <div className="flex w-[35%] sm:mt-[4rem] relative left-display">
           <ReactFade left>
-            <div className="hidden sm:flex flex-row absolute justify-end dp-02 w-[200px] h-[250px] rounded-[0.3rem] showBorder overflow-hidden">
+            <div className="hidden sm:flex flex-row absolute justify-end dp-02 w-[215px] h-[250px] rounded-[0.3rem] showBorder xl:ml-[3rem] overflow-hidden ">
               <CldImage
                 src={process.env.NEXT_PUBLIC_SECONDARY}
                 width={3000}
@@ -27,14 +27,14 @@ const Display = () => {
               </div>
             </div>
           </ReactFade>
-          <div className="name block relative mt-[18rem] 2xl:mt-[20rem] ml-[4rem] z-[1000]">
+          <div className="name block relative mt-[18rem] xl:mt-[20rem] xl:ml-[3rem] z-[1000]">
             <b>
-              <p className="hidden sm:block non-prime-font uppercase text-[3vw] text-[#ffe5d9] smoothed disable-select">
+              <p className="hidden sm:block non-prime-font uppercase text-[3rem] 2xl:text-[3vw] text-[#ffe5d9] smoothed disable-select">
                 Sakir
               </p>
             </b>
             <b>
-              <p className="hidden sm:block non-prime-font sm:text-[4vw] text-[#ffe5d9] smoothed disable-select">
+              <p className="hidden sm:block non-prime-font text-[3rem] 2xl:text-[4vw] text-[#ffe5d9] smoothed disable-select">
                 Ashker
               </p>
             </b>
