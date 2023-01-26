@@ -472,7 +472,7 @@ $my-font: "carmine";
   }
   .left-display {
     transform: scale(1.1);
-    margin-top: 3.5rem;
+    margin-top: 5rem;
   }
   .right-display {
     transform: scale(1.1);
@@ -552,11 +552,12 @@ $my-font: "carmine";
 // Large
 @media (min-width: 1536px) {
   .left-display{
-    margin-top: 3.5rem;
+    margin-top: 6rem;
   }
+
 }
 
-@media (min-width: 1536px) and (min-height: 800px){
+@media (min-width: 1280px) and (min-height: 800px){
   .m-dp {
     transform: scale(1.1);
   }

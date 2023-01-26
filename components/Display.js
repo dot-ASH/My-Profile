@@ -9,7 +9,7 @@ import cf from "../public/cf1.png";
 const Display = () => {
   return (
     <section id="display">
-      <div className="home flex justify-between py-[1rem] my-[1rem] sm:mx-[3rem] lg:mx-[4rem]">
+      <div className="home flex justify-between py-[1rem] my-[1rem] sm:mx-[3rem] lg:mx-[4rem] 2xl:mx-[6rem]">
         {/* Left */}
         <div className="flex w-[35%] sm:mt-[4rem] relative left-display">
           <ReactFade left>
