@@ -23,7 +23,7 @@ $my-font: "carmine";
   overflow: hidden;
   transition: 1s ease-in;
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 50px 40px rgb(60, 52, 52);
+  box-shadow: 0 0 50px 40px rgb(57, 53, 53);
   z-index: 2000;
 }
 
@@ -147,7 +147,7 @@ $my-font: "carmine";
   overflow: hidden;
   // background-color: #000000;
   transition: 500ms ease-in;
-  box-shadow: 0 0 30px 10px rgb(64, 64, 64);
+  box-shadow: 0 0 70px 10px rgb(49, 49, 49);
 }
 
 .inner-circle {
@@ -209,11 +209,16 @@ $my-font: "carmine";
   pointer-events: none;
 }
 
+.dp-01{
+  box-shadow: 0 0 70px 3px #3d3d3d;
+}
+
 .dp-02 {
   margin-left: 4rem;
   background-color: #000000;
   border-top-left-radius: 160px;
   border-top-right-radius: 160px;
+  box-shadow: 0 0 30px 3px #555454;
 }
 
 .circle-border {
@@ -468,14 +473,14 @@ $my-font: "carmine";
   }
   .left-display {
     transform: scale(1.1);
-    margin-top: 7rem;
+    margin-top: 4rem;
   }
   .right-display {
     transform: scale(1.1);
     margin-top: 3rem;
   }
   .m-dp{
-    transform: scale(1.1);
+    transform: scale(1.01);
   }
 
   #about div{
@@ -525,6 +530,9 @@ $my-font: "carmine";
 
 // Large
 @media (min-width: 1536px) {
+  .m-dp{
+    transform: scale(1.01);
+  }
   ::-webkit-scrollbar {
     display: none;
   }

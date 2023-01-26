@@ -29,12 +29,12 @@ const Display = () => {
           </ReactFade>
           <div className="name block relative mt-[18rem] 2xl:mt-[20rem] ml-[4rem] z-[1000]">
             <b>
-              <p className="hidden sm:block non-prime-font uppercase text-[4vw] text-[#ffe5d9] smoothed disable-select">
+              <p className="hidden sm:block non-prime-font uppercase text-[3vw] text-[#ffe5d9] smoothed disable-select">
                 Sakir
               </p>
             </b>
             <b>
-              <p className="hidden sm:block non-prime-font sm:text-[5vw] text-[#ffe5d9] smoothed disable-select">
+              <p className="hidden sm:block non-prime-font sm:text-[4vw] text-[#ffe5d9] smoothed disable-select">
                 Ashker
               </p>
             </b>
@@ -167,7 +167,7 @@ const Display = () => {
 
         <div className="flex relative items-center  w-[35%] dp-container right-display">
           <ReactFade right>
-            <div className="sm:hidden absolute ">
+            <div className="sm:hidden absolute ml-[1rem]">
               <p className="relative text-[#ffe5d9] text-3xl font-[Cousine] ml-[1rem] mt-[-15rem] z-[40]">
                 YES
                 <br />
