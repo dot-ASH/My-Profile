@@ -3,6 +3,6 @@
 ---
 
 <div style="display:flex; flex-direction:column; gap:1rem; justify-content: center; align-items: center">
-<img src="docs/my-pro-mobile.gif" width="400"/>
+<img src="docs/my-pro-mobile.gif" width="300"/>
 <img src="docs/my-pro-desk.gif" />
 </div>
