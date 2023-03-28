@@ -261,7 +261,7 @@ const Display = () => {
             <button className="stop" onClick={stop} />
             <a
               className="spotii"
-              href="https://open.spotify.com/track/3EEzQDCP8jRl2pEt9eDKMO?si=8cbce3458941463b"
+              href="https://open.spotify.com/playlist/5HY0gEw19HMzwsbCvwQxKi?si=x_70KD0zQd2Xg6-9fu5Vnw&utm_source=copy-link"
               target="_blank"
             ></a>
           </div>
