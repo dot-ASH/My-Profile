@@ -5,10 +5,8 @@ if (typeof window !== "undefined") {
   const about = document.getElementById("about");
   const dpBG = document.querySelectorAll(".dp");
   const yearBG = document.querySelector(".year-text-bg");
-  const aboutText = document.querySelector(".about-text");
   const cookieText = document.querySelectorAll(".cookie-text");
   const aboutTextColor = document.querySelectorAll(".text-color");
-  const tooltipText = document.querySelector(".tooltiptext");
   const myImage = document.getElementById("prod");
 
   if (c1) {
@@ -69,22 +67,4 @@ if (typeof window !== "undefined") {
       myImage.src = "/dotASH-dark.png";
     });
   }
-
-  if (aboutText) {
-    aboutText.addEventListener("click", (e) => {
-      window.scrollTo(0, document.body.scrollHeight);
-    });
-  }
-
-  document.body.addEventListener("click", function (event) {
-    if (event.target.id == "customTooltip") {
-      tooltipText.style.opacity = 1;
-      tooltipText.style.visibility = "visible";
-      tooltipText.style.transform = "scale(1)";
-    } else {
-      tooltipText.style.opacity = 0;
-      tooltipText.style.visibility = "hidden";
-      tooltipText.style.transform = "scale(0)";
-    }
-  });
 }
