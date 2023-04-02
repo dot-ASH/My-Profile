@@ -5,6 +5,7 @@ import { ReactCurvedText } from "react-curved-text";
 import { CldImage } from "next-cloudinary";
 import Image from "next/image";
 import cf from "../public/cf1.png";
+import Tippy from "@tippy.js/react";
 
 const Display = () => {
   const [overlay, setOverlay] = useState({
@@ -16,12 +17,33 @@ const Display = () => {
   const [audio, setAudio] = useState(null);
   const [cover, setCover] = useState(0);
 
+  const loading = (i) => {
+    const loading = document.getElementById("loadingScreen");
+    loading.style.display = "flex";
+    setTimeout(() => {
+      loading.style.display = "none";
+      window.open(links[i].url, "_blank"); //
+    }, 700);
+  };
+
+  const links = [
+    {
+      id: 1,
+      type: "music",
+      title: "Melody's Echo Chamber - I follow you!",
+      src: "https://res.cloudinary.com/dhqvucmrt/video/upload/v1676109363/I_Follow_You_y48wxz.mp3",
+      url: "https://open.spotify.com/track/3EEzQDCP8jRl2pEt9eDKMO?si=8cbce3458941463b",
+    },
+    {
+      id: 2,
+      name: "playlist",
+      title: "Crystallized",
+      url: "https://open.spotify.com/playlist/5HY0gEw19HMzwsbCvwQxKi?si=x_70KD0zQd2Xg6-9fu5Vnw&utm_source=copy-link",
+    },
+  ];
+
   useEffect(() => {
-    setAudio(
-      new Audio(
-        "https://res.cloudinary.com/dhqvucmrt/video/upload/v1676109363/I_Follow_You_y48wxz.mp3"
-      )
-    );
+    setAudio(new Audio(links[0].src));
     document.body.addEventListener("click", closeTooltip);
 
     return function cleanup() {
@@ -251,19 +273,28 @@ const Display = () => {
             style={{ width: overlay.width, opacity: overlay.opacity }}
           >
             <div className="overlay-context-text">
-              <a
-                href="https://open.spotify.com/track/3EEzQDCP8jRl2pEt9eDKMO?si=8cbce3458941463b"
-                target="_blank"
-              >
-                <p> &nbsp; Melody's Echo Chamber - I follow you!</p>
-              </a>
+            <button onClick={() => loading(0)}>
+                <p> &nbsp; {links[0].title} </p>
+              </button>
             </div>
+            <Tippy
+            content="Stop"
+            placement="top"
+            theme="bootstrap"
+            arrow={false}
+            offset="0,7"
+            >
             <button className="stop" onClick={stop} />
-            <a
-              className="spotii"
-              href="https://open.spotify.com/playlist/5HY0gEw19HMzwsbCvwQxKi?si=x_70KD0zQd2Xg6-9fu5Vnw&utm_source=copy-link"
-              target="_blank"
-            ></a>
+            </Tippy>
+            <Tippy
+            content={links[1].title}
+            placement="top"
+            theme="bootstrap"
+            arrow={false}
+            >
+               <button onClick={() => loading(1)} className="spotii"/>
+            </Tippy>
+           
           </div>
         </div>
         <div className="flex relative items-center  w-[35%] dp-container right-display">
