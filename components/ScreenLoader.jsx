@@ -5,7 +5,10 @@ const ScreenLoader = () => {
 useEffect(()=>{
   const loading = document.getElementById("loadingScreen");
   const html = document.querySelector("html");
-    if (loading) {
+    // if (loading) {
+    //   loading.style.display = "none";
+    // }
+    if(!window.onload){
       loading.style.display = "none";
     }
     html.style.overflowY = "visible";

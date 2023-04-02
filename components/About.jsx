@@ -13,6 +13,7 @@ import { FaInstagram, FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import Tippy from "@tippy.js/react";
 import "tippy.js/dist/tippy.css";
+import Link from "next/link";
 
 const About = () => {
   const icons = [
@@ -36,9 +37,22 @@ const About = () => {
       name: "Discord",
       url: "https://discord.com/users/738030761269133343",
     },
-    { id: 5, name: "Instagram", url: "https://www.instagram.com/sakirashker/" },
+    {
+      id: 5,
+      name: "Instagram",
+      url: "https://instagram.com/sakirashker?igshid=ZDdkNTZiNTM=",
+    },
     { id: 6, name: "Twitter", url: "https://twitter.com/Sakirashker/" },
   ];
+  const loading = (i) => {
+    const loading = document.getElementById("loadingScreen");
+    loading.style.display = "flex";
+    setTimeout(() => {
+      loading.style.display = "none";
+      window.open(icons[i].url , '_blank') //
+    }, 700);
+  };
+
   return (
     <div
       id="about"
@@ -108,9 +122,9 @@ const About = () => {
                   theme="bootstrap"
                   arrow={false}
                 >
-                  <a href={icons[0].url} target="_blank">
+                  <button onClick={() => loading(0)}>
                     <BsTelephone className="text-3xl grid-item"></BsTelephone>
-                  </a>
+                  </button>
                 </Tippy>
               </Slide>
               <Slide direction="down">
@@ -120,9 +134,9 @@ const About = () => {
                   theme="bootstrap"
                   arrow={false}
                 >
-                  <a href={icons[1].url} target="_blank">
+                  <button onClick={() => loading(1)}>
                     <VscMail className="text-3xl grid-item"></VscMail>
-                  </a>
+                  </button>
                 </Tippy>
               </Slide>
               <Slide direction="down" delay={200}>
@@ -132,9 +146,9 @@ const About = () => {
                   theme="bootstrap"
                   arrow={false}
                 >
-                  <a href={icons[3].url} target="_blank">
+                  <button onClick={() => loading(3)}>
                     <RxDiscordLogo className="text-3xl grid-item"></RxDiscordLogo>
-                  </a>
+                  </button>
                 </Tippy>
               </Slide>
 
@@ -145,9 +159,9 @@ const About = () => {
                   theme="bootstrap"
                   arrow={false}
                 >
-                  <a href={icons[4].url} target="_blank">
+                  <button onClick={() => loading(4)}>
                     <FaInstagram className="text-3xl grid-item"></FaInstagram>
-                  </a>
+                  </button>
                 </Tippy>
               </Slide>
 
@@ -158,9 +172,9 @@ const About = () => {
                   theme="bootstrap"
                   arrow={false}
                 >
-                  <a href={icons[2].url} target="_blank">
+                  <button onClick={() => loading(2)}>
                     <SlSocialFacebook className="text-3xl grid-item"></SlSocialFacebook>
-                  </a>
+                  </button>
                 </Tippy>
               </Slide>
 
@@ -171,9 +185,12 @@ const About = () => {
                   theme="bootstrap"
                   arrow={false}
                 >
-                  <a href={icons[5].url} target="_blank">
+                  <button onClick={() => loading(5)}>
                     <RxTwitterLogo className="text-3xl grid-item"></RxTwitterLogo>
-                  </a>
+                  </button>
+                  {/* <Link onClick={loading()} href={icons[5].url}>
+                    <RxTwitterLogo className="text-3xl grid-item"></RxTwitterLogo>
+                  </Link> */}
                 </Tippy>
               </Slide>
             </div>
