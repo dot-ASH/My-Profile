@@ -197,7 +197,7 @@ $my-font: "carmine";
 .dp-container::before {
   position: absolute;
   margin-left: 120px;
-  margin-top: -220px;
+  margin-top: -270px;
   content: "'22";
   width: 200px;
   height: 200px;
@@ -661,8 +661,8 @@ $my-font: "carmine";
   }
   .dp-container::before {
     position: absolute;
-    margin-left: 150px;
-    margin-top: -220px;
+    margin-left: 182px;
+    margin-top: -200px;
   }
 
   .typo p {
@@ -726,6 +726,7 @@ $my-font: "carmine";
     width: 250px;
     height: 300px;
   }
+
 }
 
 @media (min-width: 800px) {
@@ -746,6 +747,11 @@ $my-font: "carmine";
 @media (min-width: 1536px) {
   .left-display {
     margin-top: 6rem;
+  }
+  .dp-container::before {
+    position: absolute;
+    margin-left: 256px;
+    margin-top: -192px;
   }
 }
 

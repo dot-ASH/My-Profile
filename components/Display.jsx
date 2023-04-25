@@ -313,7 +313,7 @@ const Display = () => {
             </div>
           </ReactFade>
           <ReactFade right>
-            <div className="hidden sm:flex absolute dp-01   left-[35%] w-[305px] rounded-[3rem] showBorder overflow-hidden">
+            <div className="hidden sm:flex absolute dp-01 left-[45%] w-[270px] rounded-[3rem] showBorder overflow-hidden">
               <CldImage
                 src={process.env.NEXT_PUBLIC_PRIMARY}
                 width="5000"
