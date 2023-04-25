@@ -236,7 +236,7 @@ const About = () => {
           </div>
         </div>
         <div className="flex justify-center gap-[0.8rem] items-center w-full h-[15%] p-[2rem] text-xl text-color">
-          {/* <Tippy
+          <Tippy
             content="NextJs"
             placement="top"
             theme="bootstrap"
@@ -246,8 +246,8 @@ const About = () => {
               {" "}
               <TbBrandNextjs></TbBrandNextjs>
             </p>
-          </Tippy> */}
-          <Tippy
+          </Tippy>
+          {/* <Tippy
             content="ReactJs"
             placement="top"
             theme="bootstrap"
@@ -256,7 +256,7 @@ const About = () => {
             <p>
               <FaReact></FaReact>
             </p>
-          </Tippy>
+          </Tippy> */}
           <Tippy
             content="dotASH"
             placement="top"

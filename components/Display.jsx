@@ -111,7 +111,7 @@ const Display = () => {
               ></CldImage>
 
               <div className="flex absolute year-text-bg justify-center items-center bottom-[0%] w-[100%] h-[15%]">
-                <p className="prime-font text-2xl">'21</p>
+                <p className="prime-font text-2xl">'23</p>
               </div>
             </div>
           </ReactFade>
