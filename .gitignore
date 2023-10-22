@@ -31,3 +31,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+.obsidian
+
+/public/env.js

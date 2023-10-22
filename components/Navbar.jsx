@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import bg from "../public/bg.jpg";
+import bg from "../public/bg.svg";
 
 const Navbar = () => {
-  const bottom = () =>{
-        window.scrollTo(0, document.body.scrollHeight);
-  }
+  const bottom = () => {
+    window.scrollTo(0, document.body.scrollHeight);
+  };
   return (
     <section id="nav-div">
       <Image src={bg} className="bg-image" alt="bg"></Image>
@@ -24,7 +24,10 @@ const Navbar = () => {
         </div>
         {/* right */}
         <div className="disable-select  flex gap-[0.5rem] sm:gap-[1rem]  items-center sm:mr-[3rem]">
-          <p onClick={bottom} className="about-text lowercase prime-font cursor-pointer underline-effect smoothed text-right">
+          <p
+            onClick={bottom}
+            className="about-text lowercase prime-font cursor-pointer underline-effect smoothed text-right"
+          >
             about
           </p>
           <p className="font-bold text-2xl lowercase prime-font smoothed text-right">
@@ -32,10 +35,9 @@ const Navbar = () => {
           </p>
           <div className="cursor-pointer underline-effect custom-tooltip">
             <p id="customTooltip" className="prime-font  lowercase smoothed">
-              portfolio{" "}
+              portfolio
             </p>
             <span className="tooltiptext">
-              {" "}
               &nbsp; OOPS! you got me there! &nbsp;
               <br /> &nbsp; See ya soon anyway. &nbsp;
             </span>

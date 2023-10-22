@@ -22,7 +22,7 @@ const Display = () => {
     loading.style.display = "flex";
     setTimeout(() => {
       loading.style.display = "none";
-      window.open(links[i].url, "_blank"); //
+      window.open(links[i].url, "_blank");
     }, 700);
   };
 
@@ -273,28 +273,27 @@ const Display = () => {
             style={{ width: overlay.width, opacity: overlay.opacity }}
           >
             <div className="overlay-context-text">
-            <button onClick={() => loading(0)}>
+              <button onClick={() => loading(0)}>
                 <p> &nbsp; {links[0].title} </p>
               </button>
             </div>
             <Tippy
-            content="Stop"
-            placement="top"
-            theme="bootstrap"
-            arrow={false}
-            offset="0,7"
+              content="Stop"
+              placement="top"
+              theme="bootstrap"
+              arrow={false}
+              offset="0,7"
             >
-            <button className="stop" onClick={stop} />
+              <button className="stop" onClick={stop} />
             </Tippy>
             <Tippy
-            content={links[1].title}
-            placement="top"
-            theme="bootstrap"
-            arrow={false}
+              content={links[1].title}
+              placement="top"
+              theme="bootstrap"
+              arrow={false}
             >
-               <button onClick={() => loading(1)} className="spotii"/>
+              <button onClick={() => loading(1)} className="spotii" />
             </Tippy>
-           
           </div>
         </div>
         <div className="flex relative items-center  w-[35%] dp-container right-display">

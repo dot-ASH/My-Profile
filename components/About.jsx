@@ -1,16 +1,18 @@
 import React from "react";
 import { Slide } from "react-awesome-reveal";
+import { RxDotFilled, RxDot } from "react-icons/rx";
 import {
-  RxDiscordLogo,
-  RxTwitterLogo,
-  RxDotFilled,
-  RxDot,
-} from "react-icons/rx";
-import { BsFillCircleFill, BsTelephone } from "react-icons/bs";
-import { VscMail } from "react-icons/vsc";
-import { SlSocialFacebook } from "react-icons/sl";
-import { FaInstagram, FaReact } from "react-icons/fa";
+  BsFillCircleFill,
+  BsTelephoneFill,
+  BsReddit,
+  BsFillPhoneFill,
+} from "react-icons/bs";
+import { RiInstagramFill } from "react-icons/ri";
+import { MdMail } from "react-icons/md";
+import { FaReact, FaGithub, FaDiscord, FaPhoneAlt } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
+import { VscGithub } from "react-icons/vsc";
+import { GrReddit } from "react-icons/gr";
 import Tippy from "@tippy.js/react";
 import "tippy.js/dist/tippy.css";
 import Link from "next/link";
@@ -21,35 +23,58 @@ const About = () => {
       id: 1,
       name: "Phone",
       url: "tel:01963606880",
+      placement: "left",
+      direction: "up",
+      icon: <BsFillPhoneFill className="text-3xl grid-item"></BsFillPhoneFill>,
     },
     {
       id: 2,
       name: "Gmail",
       url: "mailto:nafeesashker63@gmail.com",
+      placement: "top",
+      direction: "down",
+      icon: <MdMail className="text-3xl grid-item"></MdMail>,
     },
     {
       id: 3,
-      name: "Facebook",
-      url: "https://www.facebook.com/5ive0ero?mibextid=ZbWKwL",
+      name: "Github",
+      url: "https://github.com/dot-ASH",
+      placement: "right",
+      direction: "down",
+      icon: <FaGithub className="text-3xl grid-item"></FaGithub>,
     },
     {
       id: 4,
       name: "Discord",
       url: "https://discord.com/users/738030761269133343",
+      placement: "left",
+      direction: "up",
+      icon: <FaDiscord className="text-3xl grid-item"></FaDiscord>,
     },
     {
       id: 5,
       name: "Instagram",
       url: "https://instagram.com/sakirashker?igshid=ZDdkNTZiNTM=",
+      placement: "bottom",
+      direction: "down",
+      icon: <RiInstagramFill className="text-3xl grid-item"></RiInstagramFill>,
     },
-    { id: 6, name: "Twitter", url: "https://twitter.com/Sakirashker/" },
+    {
+      id: 6,
+      name: "Reddit",
+      url: "https://reddit.com/user/dot_ASH/",
+      placement: "right",
+      direction: "right",
+      icon: <GrReddit className="text-3xl grid-item"></GrReddit>,
+    },
   ];
+
   const loading = (i) => {
     const loading = document.getElementById("loadingScreen");
     loading.style.display = "flex";
     setTimeout(() => {
       loading.style.display = "none";
-      window.open(icons[i].url , '_blank') //
+      window.open(icons[i].url, "_blank"); 
     }, 700);
   };
 
@@ -115,84 +140,22 @@ const About = () => {
 
           <div className=" flex flex-col justify-center items-center w-full sm:w-[40%]  h-[100%] text-color">
             <div className="grid grid-section grid-cols-3 h-[60%] sm:ml-[0px] ">
-              <Slide direction="up">
-                <Tippy
-                  content={icons[0].name}
-                  placement="left"
-                  theme="bootstrap"
-                  arrow={false}
-                >
-                  <button onClick={() => loading(0)}>
-                    <BsTelephone className="text-3xl grid-item"></BsTelephone>
-                  </button>
-                </Tippy>
-              </Slide>
-              <Slide direction="down">
-                <Tippy
-                  content={icons[1].name}
-                  placement="top"
-                  theme="bootstrap"
-                  arrow={false}
-                >
-                  <button onClick={() => loading(1)}>
-                    <VscMail className="text-3xl grid-item"></VscMail>
-                  </button>
-                </Tippy>
-              </Slide>
-              <Slide direction="down" delay={200}>
-                <Tippy
-                  content={icons[3].name}
-                  placement="right"
-                  theme="bootstrap"
-                  arrow={false}
-                >
-                  <button onClick={() => loading(3)}>
-                    <RxDiscordLogo className="text-3xl grid-item"></RxDiscordLogo>
-                  </button>
-                </Tippy>
-              </Slide>
-
-              <Slide direction="up" delay={200}>
-                <Tippy
-                  content={icons[4].name}
-                  placement="left"
-                  theme="bootstrap"
-                  arrow={false}
-                >
-                  <button onClick={() => loading(4)}>
-                    <FaInstagram className="text-3xl grid-item"></FaInstagram>
-                  </button>
-                </Tippy>
-              </Slide>
-
-              <Slide direction="up">
-                <Tippy
-                  content={icons[2].name}
-                  placement="down"
-                  theme="bootstrap"
-                  arrow={false}
-                >
-                  <button onClick={() => loading(2)}>
-                    <SlSocialFacebook className="text-3xl grid-item"></SlSocialFacebook>
-                  </button>
-                </Tippy>
-              </Slide>
-
-              <Slide direction="up" delay={200}>
-                <Tippy
-                  content={icons[5].name}
-                  placement="right"
-                  theme="bootstrap"
-                  arrow={false}
-                >
-                  <button onClick={() => loading(5)}>
-                    <RxTwitterLogo className="text-3xl grid-item"></RxTwitterLogo>
-                  </button>
-                  {/* <Link onClick={loading()} href={icons[5].url}>
-                    <RxTwitterLogo className="text-3xl grid-item"></RxTwitterLogo>
-                  </Link> */}
-                </Tippy>
-              </Slide>
+              {icons.map((item, index) => {
+                return (
+                  <Slide direction={item.direction} key={index}>
+                    <Tippy
+                      content={item.name}
+                      placement={item.placement}
+                      theme="bootstrap"
+                      arrow={false}
+                    >
+                      <button onClick={() => loading(index)}>
+                        {item.icon}
+                      </button>
+                    </Tippy>
+                  </Slide>
+                );
+              })}
             </div>
             <h2 className="flex w-max">
               <p className="text-[14px]">Dhaka | Bangladesh</p>
@@ -247,16 +210,6 @@ const About = () => {
               <TbBrandNextjs></TbBrandNextjs>
             </p>
           </Tippy>
-          {/* <Tippy
-            content="ReactJs"
-            placement="top"
-            theme="bootstrap"
-            arrow={false}
-          >
-            <p>
-              <FaReact></FaReact>
-            </p>
-          </Tippy> */}
           <Tippy
             content="dotASH"
             placement="top"
