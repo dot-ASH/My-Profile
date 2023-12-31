@@ -22,7 +22,7 @@ const About = () => {
     {
       id: 1,
       name: "Phone",
-      url: "tel:01963606880",
+      url: "tel:01963806580",
       placement: "left",
       direction: "up",
       icon: <BsFillPhoneFill className="text-3xl grid-item"></BsFillPhoneFill>,
